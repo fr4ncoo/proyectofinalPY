@@ -57,3 +57,63 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+.contenedor-libros {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.caja-libro {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.caja-libro:hover {
+    transform: translateY(-10px);
+}
+
+.caja-libro img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.caja-libro h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.caja-libro p {
+    font-size: 14px;
+    color: #777;
+}
+
+
+.centrar {
+    text-align: center;
+}
+
+
+.botones {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+}
+
+#boton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

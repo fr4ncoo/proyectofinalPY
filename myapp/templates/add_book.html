@@ -1,9 +1,13 @@
+
 {% extends 'base.html' %}
+
 {% block content %}
-<h2>Agregar Libro</h2>
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Guardar</button>
-</form>
+    <title>Agregar Libro</title>
+    <h1>Agregar Libro</h1>
+    <form method="post" enctype="multipart/form-data"> <!-- Asegúrate de incluir enctype -->
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Guardar</button>
+    </form>
+    <a href="{% url 'index' %}">Volver a la página principal</a>
 {% endblock %}

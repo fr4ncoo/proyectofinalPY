@@ -1,22 +1,26 @@
-{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+{% load static %}
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publicando Libros</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <title>{% block title %}www.PublicandoLibros.Net{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">  
 </head>
 <body>
     <header>
-        <h1>Bienvenidos a www.PublicandoLibros.net</h1>
+        <h1>Página principal de proyecto final</h1>
         <nav>
             <ul>
                 <li><a href="{% url 'index' %}">Inicio</a></li>
-                <li><a href="{% url 'add_author' %}">Agregar nuevo autor</a></li>
-                <li><a href="{% url 'add_book' %}">Agregar nuevo libro</a></li>
-                <li><a href="{% url 'add_publisher' %}">Agregar nueva editorial</a></li>
+                <li><a href="{% url 'add_author' %}">Agregar Autor</a></li>
+                <li><a href="{% url 'add_book' %}">Agregar Libro</a></li>
+                <li><a href="{% url 'add_publisher' %}">Agregar Editorial</a></li>
                 <li><a href="{% url 'search' %}">Buscar</a></li>
+                <li><a href="{% url 'register' %}">Registrar</a></li>
+                <li><a href="{% url 'login' %}">Loguearse</a></li>
+                <li><a href="{% url 'logout' %}">Cerrar sesión</a></li>
+                <li><a href="{% url 'acerca_de' %}">Acerca de...</a></li>
             </ul>
         </nav>
     </header>
@@ -24,5 +28,7 @@
         {% block content %}
         {% endblock %}
     </main>
+    <footer>        
+    </footer>
 </body>
 </html>
