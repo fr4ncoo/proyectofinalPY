@@ -49,7 +49,7 @@ Usuario: fr4nco
 Contraseña: 123
 Acceder al panel de administración en: http://127.0.0.1:8000/admin
 
-Enlace al video del prouecto: https://drive.google.com/file/d/1kNxCW4I6WTFh1a-Hzyi1ZtTr2kUMi3Cm/view
+Enlace al video del proyecto: https://drive.google.com/file/d/1kNxCW4I6WTFh1a-Hzyi1ZtTr2kUMi3Cm/view
 
 Saludos,
 Franco
